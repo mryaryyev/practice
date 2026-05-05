@@ -16,3 +16,5 @@ console.log(getReverse1);
 
 const getReverse2 = getReverse("goodbye")
 console.log(getReverse2);
+
+//npm run train -> nodemon
