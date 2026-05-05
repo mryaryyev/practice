@@ -11,6 +11,7 @@ result1 = count.bit_count() # method [cube]()// OBJECTLAR => uzining hir hator p
 result2 = count.numerator # state [wrench-achor]
 print(result1, result2)
 
+
 print("==== string ====")
  # METHODS: uppper() lower() title() find() replace()
 
@@ -28,3 +29,22 @@ result = course.replace("Fullstack", "MasterClass")
 print(f"the result (4): {result}")
 
 print(course) # AI Python Fullstack => ozgarmaydi
+
+
+print("==== boolean ====")
+# functions > type(), input() bool() int() str()
+y = input("give your value for y: ")
+print("y:", y)
+
+result = y.isnumeric()
+print(f"the input value is numeric: {result}") # True, False => KATTA harf bilan
+
+# TRUTHY vs FALSY value
+# TRUTHY: True 100 -100 "MIT"
+# FALSY: False 0 "" None
+
+test_falsy = "" or False or None or 0
+print("test_falsy:", bool(test_falsy))
+
+test_truthy = "MIT"
+print("test_truthy:", bool(test_truthy))
