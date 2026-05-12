@@ -25,7 +25,7 @@ class Person():
     def say_age(self):
         print(f"{self.name} says I am {self.age}!")
 
-    @classmethod  # decorator yordamga keladi
+    @classmethod  # decorator pattern yordamga keladi
     def explain(cls):
         print("Class: static method property executed!")
 
@@ -93,6 +93,5 @@ my_car.stop_engine()
 
 print("-----")
 your_car = Car("Toyota", 2026)
-print(your_car)
-response = your_car() # call as function
-print("response:", response)
+print(your_car) # objectni string kornushida yazish uchun
+your_car() # call as function
