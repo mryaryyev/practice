@@ -37,6 +37,7 @@ people = "Andrew", "John"
 animals = "dog",
 
 print("===== Unpacking argument =====")
+
 groups = ["MIT", "FLEXY", "DEVEX", "MG"]
 (x, y, z, a) = groups
 (x, y, *z) = groups
@@ -44,7 +45,7 @@ print(f"the x: {x} and y: {y}")
 print("z:", z)  # list =>> ["DEVEX", "MG"]
 
 
-# *args > tuple
+# *args > TUPLE
 def calculate(*args):
     print("*args >", args)
     total = 1
@@ -78,6 +79,7 @@ introduce(name="Shawn", age=32, single = True)
 
 print("-----")
 
+# *args > TUPLE & **kwargs > DICTIONARY
 def greeting(*args, **kwargs):
     print("*args >", args)
     print("**kwargs >", kwargs)
@@ -85,3 +87,15 @@ def greeting(*args, **kwargs):
 # CALL
 greeting("hi", True, 10, name="John", age=22)
 
+
+
+print("===== zip =====") 
+# zip object'i => ikita tuple'ni birlashtirip beradi
+
+tuple1 = (1, 2, 3, 4)
+tuple2 = ("a", "b", "c")
+
+zipped = zip(tuple1, tuple2)
+print("zipped:", zipped)
+result = list(zipped)
+print(result)
