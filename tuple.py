@@ -61,3 +61,16 @@ print("-----")
 calculate(0, 2, 300)
 print("-----")
 calculate(5, 7)
+
+print("-----")
+# **kwargs > DICTIONARY'ga yoyip beradi
+def introduce(**kwargs): # keyword argument
+    print(f"the type(**kwargs) value: {type(kwargs)}")
+    print(f"Hi, I am {kwargs["name"]} and I am {kwargs["age"]} years old")
+    pass
+
+
+# CALL
+introduce(name="Ryan", age=33)
+introduce(name="Shawn", age=32, single = True)
+
