@@ -56,7 +56,12 @@ print("===== Package Manager & External Package =====")
 '''
 
 with Image.open("material/MIT.png") as img_obj:
-    rgb_img = img_obj.convert("RGB")
-    resized_img = rgb_img.resize((200, 200))
+    resized_img = img_obj.resize((200, 200))
     resized_img.show()
     resized_img.save("material/sample.png")
+
+# pip3 list => install qilingan package'larni korsatadi
+
+# pip3 show pillow => pillow qayirga ornatilganni korsatadi
+
+# cd location -> ENTER -> PIL olarak install qilinganini korolamiz
