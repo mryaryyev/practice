@@ -12,12 +12,12 @@ print("===== Python Packages & Core Package =====")
 # Core Packages > https://docs.python.org/3/libraryrf
 
 
-# # Core
-# t = turtle.Turtle()
-# t.shape("turtle")
-# t.speed(10)
-# t.circle(150)
-# turtle.done()
+# Core package
+t = turtle.Turtle()
+t.shape("turtle")
+t.speed(2)
+t.circle(150)
+turtle.done()
 
 
 my_file = open("material/message.txt", "r")
@@ -65,3 +65,18 @@ with Image.open("material/MIT.png") as img_obj:
 # pip3 show pillow => pillow qayirga ornatilganni korsatadi
 
 # cd location -> ENTER -> PIL olarak install qilinganini korolamiz
+
+
+print("===== Debugging =====")
+
+
+def get_summary(*args):  # Define
+    total_amount = 0
+    for a in args:
+        total_amount += a
+        return total_amount  # solve the bug via debugging
+
+
+test = 100
+result = get_summary(1, 2, 3, 4, 5)  # Call
+print("result:", result)
